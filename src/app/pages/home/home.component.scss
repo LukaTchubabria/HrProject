@@ -1,0 +1,27 @@
+.box{
+    background:#1f1;
+    width: 20%;
+    height: 40vh;
+    float:left;
+    margin: 3% 4%;
+    img{
+        width:80%;
+        height:50%;
+    }
+}
+.home-section {
+    padding: 24px 46px;
+    width: 49.17695473251029%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
+}
+.home-title {
+    text-align: center;
+    margin-bottom: 16px;
+    @include font(23px, FiraGO-Medium, $font-black)
+}
+.home-container {
+    display: flex;
+    justify-content: space-between;
+}

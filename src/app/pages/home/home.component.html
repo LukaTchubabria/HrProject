@@ -1,0 +1,153 @@
+<!-- EXAMPLE OF USAGE LOOPS IN ANGULAR -->
+<!-- <div class="box" *ngFor="let item of data">
+    <p>{{item.id}}</p>
+    <p>{{item.name}}</p>
+    <p>{{item.lastname}}</p>
+    <img [src]="item.img">
+</div> -->
+
+<main>
+    <section class="header">
+        <form>
+            <input class="textar" type="text" id="lname" name="lname" placeholder="ძებნა...">
+            <button class="sub-btn">
+                <span class="icon-search"></span>
+            </button>
+        </form>
+        <button class="btn-f btn-1">ფასი</button>
+        <button class="btn-f  btn-2">დრო</button>
+        <button class="btn-f  btn-3">გამოცდილება</button>
+        <button class="btn-f  btn-4">გასუფთავება</button>
+    </section>
+    <section class="main-section">
+        <div class="exp-pric">
+            <h4 class="exp">გამოცდილება</h4>
+            <h4 class="pric">ფასი</h4>
+        </div>
+        <div class="main-container">
+            <div class="main-box-1">
+                <button class="main-down-btn">
+                    <span class="icon-down"></span>
+                </button>
+                <img class="user-img" src="./img/christian-buehner-DItYlc26zVI-unsplash.svg" alt="user">
+                <div class="">
+                    <p class="user-name">ნიკა გარაშვილი</p>
+                    <p class="user-exp">Softwear Enginer</p>
+                    <div class="rate">
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label class="icon-star" for="star3" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label class="icon-star" for="star2" title="text"></label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label class="icon-star" for="star1" title="text"></label>
+                    </div>
+                    <span class="rate-span">(24)</span>
+                </div>
+            </div>
+            <div class="exp-pric-m">
+                <p class="exp-m">1 წლიანი</p>
+                <p class="price-m">250-300$</p>
+            </div>
+            <div class="btn-box">
+                <button class="top-btn">ვრცლად</button>
+                <button class="bottom-btn">შეტყობინებები</button>
+            </div>
+        </div>
+    </section>
+    <div class="filt-price">
+        <form action="/action_page.php">
+            <div class="price-box">
+                <label for="min"></label>
+                <input class="text-input" type="text" name="min-price" id="min" value="200">
+                <div class="little-line"></div>
+                <label for="max"></label>
+                <input class="text-input" type="text" name="max-price" id="max" value="200"><br>
+            </div>
+            <input class="filt-submit" type="submit" value="შენახვა">
+            </form>
+    </div>
+    <div class="filt-time">
+        <form class="filt-time-form" action="/action_page.php">
+            <label class="container">1 - 2 კვირა
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+            <input class="filt-submit-time" type="submit" value="შენახვა">
+            </form>
+    </div>
+    <div class="filt-exper">
+        <form action="/action_page.php">
+            <label class="container">1 - 2 კვირა
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">1 - 2 კვირა
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+            <div class="price-box">
+                <label for="min"></label>
+                <input class="text-input" type="text" name="min-price" id="min" value="200">
+                <div class="little-line"></div>
+                <label for="max"></label>
+                <input class="text-input" type="text" name="max-price" id="max" value="200"><br>
+            </div>
+            <input class="filt-submit" type="submit" value="შენახვა">
+            </form>
+    </div>
+    <section class="lookfor">
+        <div class="home-section">
+            <h1 class="home-title">ვეძებ სამსახურს<h1>
+            <div class="home-container">
+                <div class="main-box-1">
+                    <img class="user-img" src="./img/christian-buehner-DItYlc26zVI-unsplash.svg" alt="user">
+                    <div class="">
+                        <p class="user-name">ნიკა გარაშვილი</p>
+                        <p class="user-exp">Softwear Enginer</p>
+                        <div class="rate">
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label class="icon-star" for="star3" title="text"></label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label class="icon-star" for="star2" title="text"></label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label class="icon-star" for="star1" title="text"></label>
+                        </div>
+                        <span class="rate-span">(24)</span>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button class="top-btn">ვრცლად</button>
+                    <button class="bottom-btn">შეტყობინებები</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

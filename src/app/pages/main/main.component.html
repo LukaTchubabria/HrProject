@@ -1,0 +1,46 @@
+<!-- <p style="position:absolute;left:40%;">main works! aq aris menu </p> -->
+<div class="navigation">
+    <img src="assets/logo.png" alt="profile">
+    <nav class="nav-bar">
+        <p routerLink="home" routerLinkActive="activated" >
+            <span class="icon-home"></span>მთავარი
+        </p>
+        <p routerLink="home" routerLinkActive="activated" >
+            <span class="icon-briefcase"></span>ვეძებ სამსახურს
+        </p>
+        <p routerLink="home" routerLinkActive="activated" >
+            <span class="icon-user-search"></span>ვეძებ Frelancer-ს
+        </p>
+        <p routerLink="subscribed" routerLinkActive="activated" >
+            <span class="icon-user-check"></span>გამოწერილები
+        </p>
+        <p routerLink="bookmarks" routerLinkActive="activated" >
+            <span class="icon-bookmark"></span>შენახულები
+        </p>
+        <!-- <p routerLink="home" routerLinkActive="activated">თხოვნები</p> -->
+        <p routerLink="help" routerLinkActive="activated" >
+            <span class="icon-help-circle"></span>დახმარება
+        </p>
+        <p routerLink="about" routerLinkActive="activated" >
+            <span class="icon-info"></span>ჩვენ შესახებ
+        </p>
+    </nav>
+    
+    <button class="btn-enter" (click)="popUp()" *ngIf="!authorized">შესვლა</button>
+    
+    <!-- footer profile card -->
+    <div class="profile-card" *ngIf="authorized"></div>
+</div>
+
+<section class="content">
+    <router-outlet></router-outlet>
+</section>
+
+<section *ngIf="popup">
+     <!-- background blur --> 
+    <div class="dark-bg"></div>
+
+    <div class="popUp">
+        <router-outlet name="popUp"></router-outlet>
+    </div>
+</section>

@@ -1,0 +1,49 @@
+// 12 -> 14 -> 16 -> 16 -> 20 -> 24
+  // @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+  //   @font-face {
+  //       font-family: "firaGObook";
+  //       src: url("/assets/fonts/firaGO/FiraGO_TTF/Roman/FiraGO-Book.ttf");
+  //   }
+  //   @font-face {
+  //       font-family: "firaGOmedium";
+  //       src: url("/assets/fonts/firaGO/FiraGO_TTF/Roman/FiraGO-Medium.ttf");
+  //   }
+  //   @font-face {
+  //       font-family: "firaGObold";
+  //       src: url("/assets/fonts/firaGO/FiraGO_TTF/Roman/FiraGO-Bold.ttf");
+  //   }
+  //   @font-face {
+  //       font-family: "firaGOlight";
+  //       src: url("/assets/fonts/firaGO/FiraGO_TTF/Roman/FiraGO-Light.ttf");
+  //   }
+  //   @font-face {
+  //       font-family: "firaGOregular";
+  //       src: url("/assets/fonts/firaGO/FiraGO_TTF/Roman/FiraGO-Regular.ttf");
+  //   }
+  //   @font-face {
+  //       font-family: "firaGOsemibold";
+  //       src: url("/assets/fonts/firaGO/FiraGO_TTF/Roman/FiraGO-SemiBold.ttf");
+  //   }
+
+// COLORS SIR
+$gb-color: #f2f2f2;
+$green: #03c03c;
+$red: #d2122e;
+$yellow: #f1c40f;
+$black: #393030;
+$Slate-Blue: #7b68ee;
+$Majorelle-Blue: #6050dc;
+$font-black: #201D1D;
+
+@mixin Hflex(){
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin Vflex(){
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
