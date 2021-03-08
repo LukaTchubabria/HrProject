@@ -411,6 +411,14 @@ export class DataService {
       date:"2021-01-01",
       time:"12:22",
       stars:4
+    },
+    {
+      image:"https://img.redbull.com/images/c_crop,w_4044,h_2696,x_0,y_1244,f_auto,q_auto/c_scale,w_1500/redbullcom/2019/10/09/c7cfae77-17b1-46d9-aee0-f48944c9ce9b/tyler-the-creator",
+      from:"გიგი ადამია",
+      message:"თუ ჩვენ ყველას ერთი მიზანი გვაქვს მაშინ . . .",
+      date:"2021-01-01",
+      time:"12:22",
+      stars:4
     }
   ];
   constructor() {  }
