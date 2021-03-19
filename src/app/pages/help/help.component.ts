@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./help.component.scss']
 })
 export class HelpComponent implements OnInit {
-
+  fakearray = ["ratom armushaobs es saiti?", "damasaqmebt?", "guga movida?"];
   constructor() { }
 
   ngOnInit(): void {

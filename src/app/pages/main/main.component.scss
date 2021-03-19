@@ -7,7 +7,7 @@
 .navigation {
     position: fixed;
     background-color: white;
-    width: 307px;
+    width: 20vw;
     height: 768px;
     border-radius: 0 25px 25px 0;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
@@ -47,4 +47,10 @@
     color: white;
     @include btn(120px, 55px);
     @include font (16px, FiraGO-Semibold, white);
+}
+
+.content{
+    width: 80vw;
+    float:right;
+    padding:2%;
 }
