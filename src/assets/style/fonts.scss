@@ -90,20 +90,20 @@
 
 @font-face {
     font-family: 'FiraGO';
-    src: url('./assets/fonts/FiraGO-ExtraBoldItalic.eot');
-    src: url('./assets/fonts/FiraGO-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/FiraGO-ExtraBoldItalic.woff2') format('woff2'),
-        url('./assets/fonts/FiraGO-ExtraBoldItalic.woff') format('woff'),
-        url('./assets/fonts/FiraGO-ExtraBoldItalic.ttf') format('truetype'),
-        url('./assets/fonts/FiraGO-ExtraBoldItalic.svg#FiraGO-ExtraBoldItalic') format('svg');
+    src: url('/assets/fonts/FiraGO-ExtraBoldItalic.eot');
+    src: url('/assets/fonts/FiraGO-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/FiraGO-ExtraBoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/FiraGO-ExtraBoldItalic.woff') format('woff'),
+        url('/assets/fonts/FiraGO-ExtraBoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/FiraGO-ExtraBoldItalic.svg#FiraGO-ExtraBoldItalic') format('svg');
     font-weight: 800;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'FiraGO';
-    src: url('FiraGO-ExtraBold.eot');
+    font-family: 'FiraGO-ExtraBold';
+    src: url('/assets/FiraGO-ExtraBold.eot');
     src: url('/assets/fonts/FiraGO-ExtraBold.eot?#iefix') format('embedded-opentype'),
         url('/assets/fonts/FiraGO-ExtraBold.woff2') format('woff2'),
         url('/assets/fonts/FiraGO-ExtraBold.woff') format('woff'),

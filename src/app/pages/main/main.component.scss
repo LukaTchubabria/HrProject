@@ -1,373 +1,50 @@
 @import "~src/assets/style/link";
 
-body {
-    background-color: $gb-color;
+/*------------------------------------*\
+  #Navigation
+\*------------------------------------*/
 
-    .navigation {
-        position: fixed;
-        background-color: white;
-        width: 307px;
-        height: 768px;
-        border-radius: 0 25px 25px 0;
-        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
-
-        .nav-img {
-            margin: 40px 123px 0 95px;
-        }
-        .nav-bar {
-            margin: 42px 0 185px 49px;
-
-            ul {
-
-                li {
-                    margin-top: 15px;
-
-                    a {
-                        @include font (16px, FiraGO-regular, $font-black);
-
-                        span {
-                            margin-right: 8px;
-                        }
-                        .home-icon {
-                            background-image: url(../icon/home.svg);
-                        }
-                    }
-                }
-            }
-        }
-        .btn-enter {
-            margin: 0 auto;
-            display: block;
-            color: white;
-            @include btn(120px, 55px);
-            @include Fira-s-16-w;
-        }
-    }
-
-    main {
-        margin-left: 323px;
-        margin-right: 71px;
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 24px 0;
-
-            form {
-                .textar {
-                    vertical-align: top;
-                    height: 43px;
-                    width: 204px;
-                    border: none;
-                    border-radius: 5px;
-                    box-shadow: $box-shadow;
-                    padding-left: 16px;
-
-                    &::placeholder {
-                        @include font (16px, FiraGO-regular, $font-black);
-                    }
-                }
-                .sub-btn {
-                    margin-left: 8px;
-                    @include btn(43px, 43px);
-                }
-            }
-            .btn-f {
-                @include filter-btn;
-                height: 43px;
-            }
-            .btn-1{
-                width: 135px;
-                @include font (16px, FiraGO-regular, $font-black);
-            }
-            .btn-2{
-                width: 134px;
-                @include font (16px, FiraGO-regular, $font-black);
-            }
-            .btn-3{
-                width: 178px;
-                @include font (16px, FiraGO-regular, $font-black);
-            }
-            .btn-4{
-                width: 135px;
-                border: none;
-                background-color: #FBF9F9;
-                color: #201D1D;
-                border-radius: 5px;
-                box-shadow: $box-shadow;
-                @include Fira-r-14;
-            }
-        }
-
-        .main-section {
-
-            .main-container {
-                display: flex;
-                position: relative;
-                height: 107px;
-                justify-content: space-between;
-                background-color: white;
-                border-radius: 10px;
-                box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
-            }
-        }
-    }
-}
-
-
-.exp {
-    display: inline-block;
-    margin-left: 44.34156378600823%;
-    @include Fira-m-16;
-}
-.pric {
-    display: inline-block;
-    margin-left: 15.843621399176955%;
-    @include Fira-m-16
-}
-
-
-
-.btn-box {
-    padding: 17px 0 16px 0;
-    margin-right: 24px;
-
-    button {
-        display: block;
-    }
-    .top-btn {
-        @include btn(146px, 29px);
-        @include Fira-r-14-w;
-    }
-    .bottom-btn {
-        width: 146px;
-        height: 29px;
-        margin-top: 16px;
-        border: 1px solid #F39C12;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0);
-        cursor: pointer;
-        @include Fira-r-14;
-    }
-
-}
-.exp-pric {
-    margin-bottom: 24px;
-}
-.main-down-btn {
-    width: 40px;
-    height: 40px;
-    margin: auto 0;
-    background-color: rgba(123, 104, 238, 0.15);
-    color: #201D1D;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.user-img {
-    width: 72px;
-    height: 72px;
-    border-radius: 100%;
-    margin: auto 19px auto 22px;
-}
-
-.main-box-1 {
-    display: flex;
-    margin-left: 24px;
-}
-.user-name {
-    @include Fira-r-14;
-    opacity: 60%;
-    padding: 16px 0 8px 5px;
-}
-.user-exp {
-    @include SF-m-16;
-    margin-bottom: 8px;
-}
-.rate {
-    float: left;
-    height: 46px;
-    padding: 0 7px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    cursor: pointer;
-    font-size: 24px;
-}
-.rate-span {
-    vertical-align: sub;
-    @include SF-r-16-g;
-    opacity: 70%;
-}
-.exp-pric-m {
-    position: absolute;
-    display: flex;
-    width: 100%;
-}
-.exp-m {
-    width: 120px;
-    margin-left: 44.34156378600823%;
-    text-align: center;
-}
-.price-m {
-    margin-left: 15.843621399176955%;
-}
-
-
-
-/*-------------------*/
-
-.filt-price {
-    @include filter-box(194px, 87px);
-}
-
-
-
-
-.text-input {
-    @include filter-text-input;
-    
-    &:valid {
-        @include Fira-r-14;
-        opacity: 60%;
-        text-align: center;
-    }
-}
-.little-line {
-    border-bottom: 1px solid #201D1D;
-    display: inline-block;
-    width: 6px;
-    vertical-align: middle;
-}
-.price-box {
-    padding: 16px 10px 8px 10px;
-}
-.filt-submit {
-    display: block;
-    margin: 0 auto;
-    @include btn(146px, 29px);
-    @include Fira-r-14-w;
-}
-.filt-submit-time {
-    display: block;
-    margin: 0 auto;
-    @include btn(106px, 29px);
-    @include Fira-r-14-w;
-}
-
-
-/*------------------*/
-
-
-.filt-time {
-    @include filter-box(128px, 191px);
-}
-.filt-time-form {
-    margin: 16px 0 12px 0;
-}
-
-
-
-.filt-exper {
-    @include filter-box(194px, 217px);
-}
-
-
-
-.container {
-    margin: 8px 0 8px 12px;
-    height: 18px;
-    display: block;
-    position: relative;
-    padding-left: 26px;
-    cursor: pointer;
-    @include font (14px, FiraGO-regular, #393030cc);
-    user-select: none;
-
-}
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 18px;
-    width: 18px;
-    background-color: #eee;
-    border-radius: 50%;
-}
-
-
-
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-    background-color: $Majorelle-Blue;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-
-
-
-
-
-/*---------------*/
-
-
-.home-section {
-    padding: 24px 46px;
-    width: 49.17695473251029%;
+.navigation {
+    position: fixed;
     background-color: white;
-    border-radius: 10px;
+    width: 307px;
+    height: 768px;
+    border-radius: 0 25px 25px 0;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
 }
-.home-title {
-    text-align: center;
-    margin-bottom: 16px;
-    @include font(23px, FiraGO-Medium, $font-black)
+.nav-img {
+    margin: 40px 123px 0 95px;
 }
-.home-container {
-    display: flex;
-    justify-content: space-between;
-}
+.nav-bar {
+    margin: 42px 0 185px 49px;
 
-.popUp{
-    position:absolute;
-    z-index:1;
-}
+    ul {
+        div {
+            width: 164px;
+            margin: 24px 0 24px 0;
+            border-bottom: 1px solid #201D1D;
+            opacity: 15%;
+        }
 
-.dark-bg{
-    z-index:0;
-    opacity:0.4;
-    width:100%;
-    height:100vh;
-    position:absolute;
-    background:#333;
+        li {
+            margin-top: 24px;
+
+            a {
+                @include font (16px, FiraGO-regular, $font-black);
+
+                span {
+                    margin-right: 8px;
+                    font-weight: 600;
+                    opacity: 80%;
+                }
+            }
+        }
+    }
 }
-.content{
-    float:left;
-    width:80%;
+.btn-enter {
+    margin: 0 auto;
+    display: block;
+    color: white;
+    @include btn(120px, 55px);
+    @include font (16px, FiraGO-Semibold, white);
 }

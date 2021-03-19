@@ -1,16 +1,68 @@
 @import "~src/assets/style/link";
 
-.box{
-    background:#1f1;
-    width: 20%;
-    height: 40vh;
-    float:left;
-    margin: 3% 4%;
-    img{
-        width:80%;
-        height:50%;
+/*------------------------------------*\
+  #Header
+\*------------------------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px 0;
+
+    form {
+        .textar {
+            vertical-align: top;
+            height: 43px;
+            width: 204px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: $box-shadow;
+            padding-left: 16px;
+
+            &::placeholder {
+                @include font (16px, FiraGO-regular, $font-black);
+            }
+        }
+        .sub-btn {
+            margin-left: 8px;
+            @include btn(43px, 43px);
+        }
+    }
+    .btn-f {
+        @include filter-btn;
+        height: 43px;
+    }
+    .btn-1{
+        width: 135px;
+        @include font (16px, FiraGO-regular, $font-black);
+    }
+    .btn-2{
+        width: 134px;
+        @include font (16px, FiraGO-regular, $font-black);
+    }
+    .btn-3{
+        width: 178px;
+        @include font (16px, FiraGO-regular, $font-black);
+    }
+    .btn-4{
+        width: 135px;
+        border: none;
+        background-color: #FBF9F9;
+        color: #201D1D;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        @include font(14px, FiraGO-regular, $font-black);
     }
 }
+
+
+
+
+/*------------------------------------*\
+  #Content
+\*------------------------------------*/
+
 .home-section {
     padding: 24px 46px;
     width: 49.17695473251029%;
