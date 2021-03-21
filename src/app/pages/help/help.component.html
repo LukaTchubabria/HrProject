@@ -1,2 +1,32 @@
-<p>help works!</p>
-<div class="box" *ngFor="let saburavi of fakearray"></div>
+<h1 class="help-title">რით შეგვიძლია დაგეხმაროთ ?</h1>
+<form>
+    <input class="textar" type="text" id="lname" name="lname" placeholder="ძებნა...">
+    <button class="sub-btn">
+        <span class="icon-search"></span>
+    </button>
+</form>
+<h2 class="help-container-title">ხშირად დასმული კითხვები</h2>
+<div class="help-container" *ngFor="let saburavi of fakearray">
+    <div class="help-box">
+        <h5 class="help-question">ვერ ვპოულობ გარკვეულ პროფესიას</h5>
+        <button class="down-btn help-down-btn">
+            <span class="icon-down"></span>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+<div class="help-container">
+    <div class="help-box">
+        <h5 class="help-question">ვერ ვპოულობ გარკვეულ პროფესიას</h5>
+        <button class="down-btn help-down-btn">
+            <span class="icon-down"></span>
+        </button>
+    </div>
+    <div>
+        <p class="help-question-text">პროფესიების ყველა ჩამონათვალი არის Bar_ში.</p>
+    </div>
+</div>
