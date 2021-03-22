@@ -5,7 +5,12 @@ body{
     background:#F2F2F2;
 }
 
-.main-section {
-    margin-left: 323px;
-    margin-right: 71px;
+.down-btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(123, 104, 238, 0.15);
+    color: #201D1D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
