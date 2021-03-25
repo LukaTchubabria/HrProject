@@ -37,11 +37,14 @@
         }
 }
 .btn-enter {
-    margin: 0 auto;
     display: block;
     color: white;
     @include btn(120px, 55px);
     @include font (16px, FiraGO-Semibold, white);
+    position: absolute;
+    bottom: 30px;
+    transform: translate(-50% , -50%);
+    left: 50%;
 }
 
 .content{

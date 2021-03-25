@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 24px 0;
+    padding-bottom: 24px;
 
     form {
         .textar {
@@ -62,10 +62,18 @@
 /*------------------------------------*\
   #Home pirst page
 \*------------------------------------*/
-
+.main-home-page {
+    display: flex;
+    justify-content: space-between;
+}
+.main-box {
+    display: flex;
+}
+.lookfor {
+    width: 49%;
+}
 .home-section {
     padding: 24px 46px;
-    width: 49.17695473251029%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
