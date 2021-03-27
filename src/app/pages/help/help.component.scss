@@ -1,7 +1,74 @@
-.box{
-    width:20%;
-    height:30vh;
-    margin:4%;
-    background:tomato;
-    float:left;
+@import "~src/assets/style/link";
+
+.help-container{
+    margin: 8px 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 0.5px solid #6050DC;
 }
+.help-title {
+    margin: 24px 0 32px 0;
+    text-align: center;
+    @include font(24px, FiraGO-Regular, $black-red);
+}
+form {
+    float: right;
+
+    .textar {
+        vertical-align: top;
+        height: 43px;
+        width: 204px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        padding-left: 16px;
+
+        &::placeholder {
+            @include font (16px, FiraGO-regular, $font-black);
+        }
+    }
+    .sub-btn {
+        margin-left: 8px;
+        @include btn(43px, 43px);
+    }
+}
+.help-container-title {
+    margin-top: 107px;
+    @include font(24px, FiraGO-Regular, $black-red);
+}
+.help-box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.help-box {
+    margin: 0 16px 0 16px;
+
+    .help-question {
+        float: left;
+        @include font(20px, FiraGO-Regular, $black-red);
+        margin-top: 28px;
+    }
+    .help-down-btn {
+        float: right;
+        margin: 20px 16px 20px 0;
+    }
+
+
+
+
+
+
+    //action - DIV
+}
+.help-question-text {
+    margin: 0 0 22px 16px;
+    opacity: 60%;
+    @include font(18px, FiraGO-Regular, $black-red);
+}
+
+/*
+button {
+    transform: rotate(180deg);
+}
+*/

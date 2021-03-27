@@ -1,6 +1,6 @@
 <!-- <p style="position:absolute;left:40%;">main works! aq aris menu </p> -->
 <div class="navigation">
-    <img src="assets/logo.png" alt="profile">
+    <img class="nav-img" src="assets/logo.png" alt="profile">
     <nav class="nav-bar">
         <p routerLink="home" routerLinkActive="activated" >
             <span class="icon-home"></span>მთავარი
@@ -9,17 +9,20 @@
             <span class="icon-briefcase"></span>ვეძებ სამსახურს
         </p>
         <p routerLink="home" routerLinkActive="activated" >
-            <span class="icon-briefcase"></span>ვეძებ სამსახურს
-        </p>
-        <p routerLink="home" routerLinkActive="activated" >
             <span class="icon-user-search"></span>ვეძებ Frelancer-ს
         </p>
+        <div></div>
         <p routerLink="subscribed" routerLinkActive="activated" >
             <span class="icon-user-check"></span>გამოწერილები
         </p>
         <p routerLink="bookmarks" routerLinkActive="activated" >
             <span class="icon-bookmark"></span>შენახულები
         </p>
+        <div></div>
+        <p routerLink="home" routerLinkActive="activated" >
+            <span class="icon-briefcase"></span>თხოვნები
+        </p>
+        <div></div>
         <p routerLink="help" routerLinkActive="activated" >
             <span class="icon-help-circle"></span>დახმარება
         </p>
@@ -33,6 +36,47 @@
     <!-- footer profile card -->
     <div class="profile-card" *ngIf="authorized"></div>
 </div>
+
+
+<div class="dark-bg" style="display: none;">
+    <div class="look-for-fr-nav">
+        <button class="icon-x nav-x"></button>
+        <form>
+            <label class="container">
+                <div>ყველა</div>
+                <input type="checkbox" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <div>Front End Developer</div>
+                <input type="checkbox" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <div>Back End Developer</div>
+                <input type="checkbox" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <div>Full Stack Developer</div>
+                <input type="checkbox" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <div>Graphic Designer</div>
+                <input type="checkbox" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <div>UI/UX Designer</div>
+                <input type="checkbox" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <input class="filt-submit" type="submit" value="შენახვა">
+        </form>
+    </div>
+</div>
+
 
 <div class="content">
     <router-outlet></router-outlet>

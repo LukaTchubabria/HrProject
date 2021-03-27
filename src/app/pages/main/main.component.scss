@@ -8,7 +8,7 @@
     position: fixed;
     background-color: white;
     width: 20vw;
-    height: 768px;
+    height: 100vh;
     border-radius: 0 25px 25px 0;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
 }
@@ -17,8 +17,7 @@
 }
 .nav-bar {
     margin: 42px 0 185px 49px;
-
-    ul {
+    
         div {
             width: 164px;
             margin: 24px 0 24px 0;
@@ -26,31 +25,121 @@
             opacity: 15%;
         }
 
-        li {
+        p {
             margin-top: 24px;
-
-            a {
-                @include font (16px, FiraGO-regular, $font-black);
+            @include font (16px, FiraGO-regular, $font-black);
 
                 span {
                     margin-right: 8px;
                     font-weight: 600;
                     opacity: 80%;
                 }
-            }
         }
-    }
 }
 .btn-enter {
-    margin: 0 auto;
     display: block;
     color: white;
     @include btn(120px, 55px);
     @include font (16px, FiraGO-Semibold, white);
+    position: absolute;
+    bottom: 30px;
+    transform: translate(-50% , -50%);
+    left: 50%;
 }
 
 .content{
     width: 80vw;
     float:right;
     padding:2%;
+}
+
+
+
+
+
+.dark-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(57, 48, 48, 0.5);
+
+    .look-for-fr-nav {
+        width: 261px;
+        height: 427px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+.container div {
+    border: 1px solid $light-blue;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 43px;
+    width: 197px;
+    height: 43px;
+}
+.filt-submit {
+    display: block;
+    margin: auto;
+    text-align: center;
+    @include btn(146px, 29px);
+    @include font(14px, FiraGO-Regular, white);
+}
+.nav-x {
+    float: right;
+    margin-top: 12px;
+    margin-right: 16px;
+    border: none;
+    background-color: white;
+}
+form {
+    padding-top: 32px;
+}
+.container {
+    margin: 0 0 16px 12px;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    @include font (14px, FiraGO-regular, $light-blue);
+    user-select: none;
+}
+.container input {
+    margin-left: 49px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid $Majorelle-Blue;
+    border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+    background-color: #fff;
+}
+.container input:checked ~ .checkmark {
+    background-color: $Majorelle-Blue;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
 }
