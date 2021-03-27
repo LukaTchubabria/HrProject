@@ -21,14 +21,14 @@
 <!-- Main home page -->
 <div class="main-home-page">
     <div class="lookfor">
-        <div class="home-section">
+        <div class="home-section" >
             <h1 class="home-title">ვეძებ სამსახურს</h1>
-            <div class="home-container">
+            <div class="home-container" *ngFor="let hr of Hr">
                 <div class="main-box">
                     <img class="user-img" src="./img/christian-buehner-DItYlc26zVI-unsplash.svg" alt="user">
                     <div class="">
-                        <p class="user-name">ნიკა გარაშვილი</p>
-                        <p class="user-exp">Softwear Enginer</p>
+                        <p class="user-name"> {{hr.name}} {{hr.lastname}}</p>
+                        <p class="user-exp"> {{hr.profession}} </p>
                         <div class="rate">
                             <input type="radio" id="star3" name="rate" value="3" />
                             <label class="icon-star" for="star3" title="text"></label>
@@ -47,6 +47,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="lookfor">
         <div class="home-section">
             <h1 class="home-title">ვეძებ Frelance </h1>

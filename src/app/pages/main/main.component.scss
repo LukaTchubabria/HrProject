@@ -11,12 +11,17 @@
     height: 100vh;
     border-radius: 0 25px 25px 0;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.16);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
 }
 .nav-img {
-    margin: 40px 123px 0 95px;
+    width:20%;
+    height:auto;
 }
 .nav-bar {
-    margin: 42px 0 185px 49px;
+    height:70vh;
     
         div {
             width: 164px;
@@ -26,6 +31,7 @@
         }
 
         p {
+            cursor:pointer;
             margin-top: 24px;
             @include font (16px, FiraGO-regular, $font-black);
 
@@ -37,14 +43,11 @@
         }
 }
 .btn-enter {
+    height:15vh;
     display: block;
     color: white;
-    @include btn(120px, 55px);
+    @include btn(50%, 9vh);
     @include font (16px, FiraGO-Semibold, white);
-    position: absolute;
-    bottom: 30px;
-    transform: translate(-50% , -50%);
-    left: 50%;
 }
 
 .content{
@@ -142,4 +145,14 @@ form {
 }
 .container input:checked ~ .checkmark:after {
     display: block;
+}
+
+
+.popUp{
+    width:20%;
+    height:100vh;
+    background:white;
+    position:absolute;
+    left:40%;
+    z-index:30000;
 }
