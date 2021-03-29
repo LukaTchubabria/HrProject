@@ -15,11 +15,18 @@
     transform: translate(-50%, -50%);
 }
 .auth_box {
-    height: 100%;
+    height: 60%;
     width: 50%;
     float: right;
     @include Vflex;
     padding: 2.5%;
+    justify-content: space-between;
+
+    .exit_button {
+      background-color: white;
+      border: none;
+      align-self: flex-end;
+    }
 }
 .bg_img {
     float: left;
@@ -40,18 +47,33 @@
     }
 }
 .reg_auth {
-    width: 75%;
-    justify-content: space-between;
-    display: flex;
-}
-.auth_btn {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 25px;
+
+  .auth_btn {
     @include font (16px, FiraGO-Medium, $font-black);
     background: none;
     border: none;
     cursor: pointer;
+    padding: 10px;
+  }
+  .active {
+    border-bottom: 1px solid #6E5DE5;
+    color: #6E5DE5;
+  }
 }
-.entr_information {
-    width: 100%;
+.enter_information {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > * {
+    margin-bottom: 16px;
+  }
 }
 .auth_input {
     height: 43px;
@@ -62,17 +84,25 @@
     outline: none;
 }
 .login_para {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    p{
-        @include font(12px, FiraGO-Book, #3B3BD9);
-        text-decoration: underline;
+  div {
+    display: flex;
+
+    span {
+      margin-left: 5px;
     }
+  }
+  p{
+      @include font(12px, FiraGO-Book, #3B3BD9);
+      text-decoration: underline;
+  }
 }
 .enter_btn {
     @include btn(100%, 43px);
+    @include font(16px, FiraGO-Medium, white);
 }
 .or_style {
     display: flex;
@@ -86,6 +116,45 @@
         height: 0.5px;
     }
 }
+.social_auth {
+  width: 100%;
+
+  .enter_btn:nth-child(1) {
+    margin: 16px 0;
+  }
+}
+
+/*registration*/
+.reg_enter_information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > * {
+    margin-bottom: 16px;
+  }
+}
+
+/*ვერიფიკაცია*/
+.auth_box_x {
+  height: 30%;
+  width: 50%;
+  float: right;
+  @include Vflex;
+  padding: 2.5%;
+  justify-content: space-between;
+
+  .exit_button {
+    background-color: white;
+    border: none;
+    align-self: flex-end;
+  }
+}
+
+
+
+
 
 /*checkbox*/
 
