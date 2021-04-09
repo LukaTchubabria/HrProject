@@ -1,9 +1,141 @@
 <div>
-    <div>
-        login
+    <!-- ავტორიზაცია -->
+    <div class="auth_container">
+        <div class="bg_img">
+            <div class="hello">გამარჯობა</div>
+        </div>
+        <div class="auth_box">
+            <button class="exit_button">
+                <span class="icon-x"></span>
+            </button>
+            <div class="reg_auth">
+                <button class="auth_btn active">ავტორიზაცია</button>
+                <button class="auth_btn">რეგისტრაცია</button>
+            </div>
+            <div class="enter_information">
+                <input class="auth_input" type="text" placeholder="მომხმარებელი/მეილი" name="email" id="email" required>
+                <input class="auth_input" type="password" placeholder="პაროლი" name="psw" id="psw" required>
+                <div class="login_para">
+                    <div>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            პაროლის შენახვა
+                        </label>
+                        <span class="icon-info"></span>
+                    </div>
+                    <p>დაგავიწყდა პაროლი?</p>
+                </div>
+                <button class="enter_btn">შესვლა</button>
+            </div>
+            <div class="or_style">
+                <hr>
+                <p>ან</p>
+                <hr>
+            </div>
+            <div class="social_auth">
+                <button class="enter_btn"></button>
+                <button class="enter_btn"></button>
+            </div>
+        </div>                            
+    </div>
+    <!-- რეგისტრაცია -->
+    <div class="auth_container"  style="display: none;">
+        <div class="bg_img">
+            <div class="hello">გამარჯობა</div>
+        </div>
+        <div class="auth_box">
+            <button class="exit_button">
+                <span class="icon-x"></span>
+            </button>
+            <div class="reg_auth">
+                <button class="auth_btn">ავტორიზაცია</button>
+                <button class="auth_btn active">რეგისტრაცია</button>
+            </div>
+            <div class="reg_enter_information">
+                <input class="auth_input" type="text" placeholder="სახელი" name="email" id="email" required>
+                <input class="auth_input" type="text" placeholder="გვარი" name="email" id="email" required>
+                <input class="auth_input" type="password" placeholder="პაროლი" name="psw" id="psw" required>
+                <input class="auth_input" type="password" placeholder="გაიმეორეთ პაროლი" name="psw" id="psw" required>
+                <div class="login_para">
+                    <div>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            პაროლის შენახვა
+                        </label>
+                        <span class="icon-info"></span>
+                    </div>
+                    <p>დაგავიწყდა პაროლი?</p>
+                </div>
+                <button class="enter_btn">შესვლა</button>
+            </div>
+            <div class="or_style">
+                <hr>
+                <p>ან</p>
+                <hr>
+            </div>
+            <div class="social_auth">
+                <button class="enter_btn"></button>
+                <button class="enter_btn"></button>
+            </div>
+        </div>
+    </div>
+    <!-- ვერიფიკაცია -->
+    <div class="auth_container" style="display: none;">
+        <div class="bg_img">
+            <div class="hello">გამარჯობა</div>
+        </div>
+        <div class="auth_box_x">
+            <button class="exit_button">
+                <span class="icon-x"></span>
+            </button>
+            <div class="reg_auth">
+                <button class="auth_btn active">ვერიფიკაცია მეილით</button>
+            </div>
+            <div class="reg_enter_information">
+                <input class="auth_input" type="text" placeholder="ჩაწერეთ კოდი" name="email" id="email" required>
+                <button class="enter_btn">შემდეგი</button>
+            </div>
+        </div>
     </div>
 
-    <div>
-        registracia
+    <!-- პაროლის აღდგენა -->
+    <div class="auth_container" style="display: none;">
+        <div class="bg_img">
+            <div class="hello">გამარჯობა</div>
+        </div>
+        <div class="auth_box_x">
+            <button class="exit_button">
+                <span class="icon-x"></span>
+            </button>
+            <div class="reg_auth">
+                <button class="auth_btn active">პაროლის აღდგენა</button>
+            </div>
+            <div class="reg_enter_information">
+                <input class="auth_input" type="text" placeholder="მომხმარებლის მეილი" name="email" id="email" required>
+                <button class="enter_btn">შემდეგი</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- პაროლის აღდგენა -->
+    <div class="auth_container" style="display: none;">
+        <div class="bg_img">
+            <div class="hello">გამარჯობა</div>
+        </div>
+        <div class="auth_box_x">
+            <button class="exit_button">
+                <span class="icon-x"></span>
+            </button>
+            <div class="reg_auth">
+                <button class="auth_btn active">პაროლის აღდგენა</button>
+            </div>
+            <div class="reg_enter_information">
+                <input class="auth_input" type="text" placeholder="ახალი პაროლი" name="email" id="email" required>
+                <input class="auth_input" type="text" placeholder="გაიმეორეთ პაროლი" name="email" id="email" required>
+                <button class="enter_btn">შესვლა</button>
+            </div>
+        </div>
     </div>
 </div>
