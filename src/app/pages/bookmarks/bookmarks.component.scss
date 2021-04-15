@@ -5,14 +5,14 @@
 
 
 /*------------------------------------*\
-  #Boockmark
+  #Bookmark
 \*------------------------------------*/
 
 
-.empty_boockmark {
+.empty_bookmark {
     position: relative;
 }
-.empty_boockmark_man {
+.empty_bookmark_man {
     background-image: url(../../../assets/img/man.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -22,7 +22,7 @@
     top: 30vh;
     left: 2vw;
 }
-.empty_boockmark_board {
+.empty_bookmark_board {
     background-image: url(../../../assets/img/board.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -32,13 +32,13 @@
     right: 5vw;
     top: 6vh;
 }
-.empty_boockmark_text {
+.empty_bookmark_text {
     position: absolute;
     bottom: -30px;
     @include font(24px, FiraGO-Medium, $light-blue);
 }
 
-.boockmark_bg {
+.bookmark_bg {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
