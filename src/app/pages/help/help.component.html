@@ -5,28 +5,16 @@
         <span class="icon-search"></span>
     </button>
 </form>
+
 <h2 class="help-container-title">ხშირად დასმული კითხვები</h2>
-<div class="help-container" *ngFor="let saburavi of fakearray">
+<div class="help-container" *ngFor="let question of Questions;index as i">
     <div class="help-box">
-        <h5 class="help-question">ვერ ვპოულობ გარკვეულ პროფესიას</h5>
-        <button class="down-btn help-down-btn">
-            <span class="icon-down"></span>
+        <h5 class="help-question"> {{ question }} </h5>
+        <button class="down-btn help-down-btn" (click)="this.toggles[i] = !this.toggles[i];">
+            <span class="icon-down"></span> 
         </button>
     </div>
-</div>
-
-
-
-
-
-<div class="help-container">
-    <div class="help-box">
-        <h5 class="help-question">ვერ ვპოულობ გარკვეულ პროფესიას</h5>
-        <button class="down-btn help-down-btn">
-            <span class="icon-down"></span>
-        </button>
-    </div>
-    <div>
+    <div *ngIf="toggles[i]">
         <p class="help-question-text">პროფესიების ყველა ჩამონათვალი არის Bar_ში.</p>
     </div>
 </div>

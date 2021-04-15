@@ -1,1 +1,12 @@
-<p>about works!</p>
+<div class="about-container">
+    <p class="title"> ვინ ვართ ჩვენ? </p>
+    <p class="story"> {{AboutUs}} </p>
+</div>
+
+<div class="member-card" *ngFor="let member of Members">
+    <p> {{member.role}} </p>
+    <span>
+        <img [src]="member.image" [alt]="member.name">
+        <p> {{member.name}} {{member.lastname}} </p>
+    </span>
+</div>

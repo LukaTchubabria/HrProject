@@ -1,0 +1,61 @@
+@import "~src/assets/style/variables.scss";
+
+.about-container {
+    width: 90%;
+    height: auto;
+    margin: 0 2%;
+    background-color:#fff;
+    padding:1%;
+    border-radius:10px;
+    box-shadow: $box-shadow;
+    font-family: FiraGO;
+    p{
+        text-align: center;
+        line-height: 1.4;
+    }
+    .title{
+        font-size:1.6vw;
+        line-height: normal;
+    }
+}
+
+.member-card {
+    font-family: FiraGO Book;
+    width: 25%;
+    height: 25vh;
+    background: #fff;
+    text-align: center;
+    float:left;
+    margin:2% 4%;
+    border-radius: 10px;
+    letter-spacing:2px;
+    box-shadow: $box-shadow;
+
+    @include Vflex();
+    justify-content:space-around;
+
+    b{
+        font-size:1.5vw;
+        height:1vh;
+        cursor:pointer;
+    }
+
+    span{
+        width:80%;
+        height:20vh;
+        @include Hflex();
+        justify-content:space-between;
+        
+        p{
+            width:60%;
+            cursor:pointer;
+            font-size:0.9vw;
+        }
+        img{
+            width:35%;
+            height:65%;
+            border-radius: 100px;
+            cursor:pointer;
+        }
+    }
+}
