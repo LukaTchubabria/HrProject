@@ -1,0 +1,137 @@
+@import "~src/assets/style/link";
+
+
+
+
+
+/*------------------------------------*\
+  #Bookmark
+\*------------------------------------*/
+
+
+.empty_bookmark {
+    position: relative;
+}
+.empty_bookmark_man {
+    background-image: url(../../../assets/img/man.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 23vw;
+    height: 50vh;
+    position: absolute;
+    top: 30vh;
+    left: 2vw;
+}
+.empty_bookmark_board {
+    background-image: url(../../../assets/img/board.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    right: 5vw;
+    top: 6vh;
+}
+.empty_bookmark_text {
+    position: absolute;
+    bottom: -30px;
+    @include font(24px, FiraGO-Medium, $light-blue);
+}
+
+.bookmark_bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    width: 231px;
+    height: 216px;
+
+    .markic {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    .cont1 {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+
+        }
+        .name_box {
+            @include Vflex;
+
+            .name, .lastname, .proffesion {
+                @include font(16px, SF-Medium, $black-red)
+            }
+            .proffesion {
+                opacity: 50%;
+            }
+        }
+    }
+    .cont2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+
+        .statement, .date{
+            @include font(14px, FiraGO-Regular, $font-black)
+        }
+        .date {
+            opacity: 50%;
+        }
+    }
+    .cont3 {
+        display: flex;
+        justify-content: space-around;
+        .message-btn {
+            width: 53px;
+            height: 33px;
+            background-color: #F1C40F;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .price-btn {
+            @include btn(121px, 33px)
+        }
+    }
+
+}
+
+
+.cont2 input {
+    margin-left: 49px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid $Majorelle-Blue;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+    background-color: #fff;
+}
+.container input:checked ~ .checkmark {
+    background-color: $Majorelle-Blue;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
